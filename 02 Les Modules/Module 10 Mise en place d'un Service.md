@@ -85,10 +85,13 @@ export class PersonneService {
 ## :four: Ajouter le service en tant provider
 **app.config.ts**
 ```ts
+import { ApplicationConfig } from '@angular/core';
+import { PersonneService } from './services/personne.
 //...
-import { PersonneService } from './services/personne.service';
 export const appConfig: ApplicationConfig = {
-  providers: [PersonneService,provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay())]
+  providers: [
+    PersonneService
+  ]
 };
 ```
 
