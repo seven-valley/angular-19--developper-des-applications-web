@@ -22,19 +22,19 @@
 --------------------------------
 
  $\color{red}{\text{SANS Le service}}$  
-<img src="../img/td/td10/1-avant.png" width="400">
+<img src="../img/td/td10/1-avant.png" width="600">
 
 --------------------------------
 
  $\color{green}{\text{AVEC Le Service}}$
  - Le service contient désormais **le tableau** d'objets
-<img src="../img/td/td10/2-apres.png" width="350">
+<img src="../img/td/td10/2-apres.png" width="600">
 
 --------------------------------
  
  Pour modifier les données :
 - Chaque componsant appelle désormais **les méthodes** du service
-<img src="../img/td/td10/3-apres.png" width="350">
+<img src="../img/td/td10/3-apres.png" width="600">
 
 --------------------------------
 
