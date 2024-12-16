@@ -1,8 +1,8 @@
-# TP Echo Team Builder  
+# TP 07 Team Builder  
 <img src="../../img/3-piments.png" width="200">
 
 **live preview** :  
-[Tester le TP Echo](https://www.sevenvalley.fr/tp-javascript/tpe) 
+[Tester le TP 07](https://www.sevenvalley.fr/tp-javascript/tpe) 
 
 <img src="../../img/tp/tpe.webp" width="600">
 
