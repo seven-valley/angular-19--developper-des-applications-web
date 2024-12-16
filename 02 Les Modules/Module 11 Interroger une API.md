@@ -2,7 +2,7 @@
 - Choisir une API à interroger
 - Utiliser l’objet httpClient depuis un composant
 
-<img src="../img/td/td11/film.png" width="400">
+<img src="../img/td/td11/film.png" width="200">
 
 ## :one: Ajouter le provideHttpClient  en tant provider
 **app.config.ts**
