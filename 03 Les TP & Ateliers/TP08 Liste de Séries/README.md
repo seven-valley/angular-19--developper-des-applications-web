@@ -22,3 +22,5 @@ http://www.omdbapi.com/?apikey=xxxx&i=star
 - Quand on ajoute la série elle s'enlève de la liste de recherche
 - Enlever la série de la liste de favories
 - Utiliser local storage
+
+

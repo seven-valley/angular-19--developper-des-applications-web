@@ -41,3 +41,4 @@ export class AppComponent {
 <br>
 <img [src]="img" width="150">
 ```
+<img src="../img/td/td11/film-url.jpg" width="600">
