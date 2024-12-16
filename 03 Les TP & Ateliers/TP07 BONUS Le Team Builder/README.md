@@ -1,5 +1,6 @@
-# TP Echo Team Builder
-<img src="../img/3-piment.png" width="200">
+# TP Echo Team Builder  
+<img src="../../img/3-piment.png" width="200">
+
 **live preview** :  
 [Tester le TP Echo](https://www.sevenvalley.fr/tp-javascript/tpe) 
 
