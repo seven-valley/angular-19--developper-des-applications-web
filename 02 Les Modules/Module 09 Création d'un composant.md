@@ -1,5 +1,5 @@
 # Module 09 - Création d'un composant
- <img src="../img/td/td10/1-piment.png" width="200">
+ <img src="../img/td/td9/1-piment.png" width="200">
 
 :one: Création d'un composant  
 :two: Appeler un composant depuis le composant principal (root)  
