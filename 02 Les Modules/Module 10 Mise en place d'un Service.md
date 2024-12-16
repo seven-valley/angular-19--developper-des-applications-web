@@ -7,10 +7,10 @@
 :two: Création d'un service    
 :three: Ajouter les méthodes pour modififier le tableau  
 :four: Mettre le service dans les "provider"   
-:five: Appeler le service depuis le composant principal  
-:six: Récupérer les données du service    
-:seven: Modifier les données du service      
-:eight: Appeler le service depuis un autre composant      
+:five: Appeler le service depuis le composant principal   
+-  Récupérer les données du service    
+- Modifier les données du service      
+:six: Appeler le service depuis un autre composant      
 
 
 ## :one: Pourquoi mettre en place un service ?
@@ -114,7 +114,7 @@ export class AppComponent implements OnInit{
  }
 ```
 
-# :eight: Appeler le service depuis un autre composant 
+## :six: Appeler le service depuis un autre composant 
 **guest.component.ts**
 ```ts
 export class GuestComponent {
