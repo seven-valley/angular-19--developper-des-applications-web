@@ -4,7 +4,7 @@
 
 <img src="../img/td/td11/film.png" width="200">
 
-## :one: Ajouter le provideHttpClient  en tant provider
+## Ajouter le provideHttpClient  en tant provider
 **app.config.ts**
 ```ts
 import { ApplicationConfig } from '@angular/core';
@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
   ]
 };
 ```
-
+## Ajouter le HttpClient dans le composant
 **app.component.ts**
 ```ts
 import { HttpClient } from '@angular/common/http';
