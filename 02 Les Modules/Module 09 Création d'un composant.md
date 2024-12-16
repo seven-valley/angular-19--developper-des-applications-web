@@ -1,9 +1,11 @@
 # Module 09 - Création d'un composant
-:one: Création d’un composant  
+ <img src="../img/td/td10/1-piment.png" width="200">
+
+:one: Création d'un composant  
 :two: Appeler un composant depuis le composant principal (root)  
 :three: Envoyer des données à un composant  
 :four: Recevoir des données depuis un composant  et les Afficher  
-:five: Appeler plusieurs composants depuis un tableau d’objet  
+:five: Appeler plusieurs composants depuis un tableau d'objet  
 :six: Créer une classe **BO** **B**usiness **O**bject avec TypeScript  
 
 ## Présentation
@@ -70,7 +72,7 @@ import { GuestComponent } from './guest/guest.component';
 ## :three: Envoyer des données à un composant
 ***Depuis le componsant mère ou root*** 
 Nous envoyons des données au composant enfant : **guest**
-- Création d’attributs dans la balise du component enfant
+- Création d'attributs dans la balise du component enfant
 - Les données sont envoyées via les attribut **en dur**
 <img src="../img/td/td9/6-app.png" width="200">
 
@@ -84,8 +86,8 @@ Nous envoyons des données au composant enfant : **guest**
 
  ## :four: Recevoir des données depuis un composant
  ***Nous allons accusé reception des données dans le composant enfant***  
-- A l’aide du décorateur <code>@Input()</code> on accuse réception des données
-- Afin d’injecter une donnée depuis l'extérieur
+- A l'aide du décorateur <code>@Input()</code> on accuse réception des données
+- Afin d'injecter une donnée depuis l'extérieur
 <img src="../img/td/td9/8-guest-only.png" width="200">
 
 **guest/guest.component.ts**
@@ -115,9 +117,9 @@ Nous Affichons les données envoyées
 **Affichage :**  
 <img src="../img/td/td9/5-personnes.png" width="200">
 
-## :five: Appeler plusieurs composants depuis un tableau d’objets
+## :five: Appeler plusieurs composants depuis un tableau d'objets
 ***Plutôt que de "mettre en dur" les données dans la vue HTML***
-- Il est préférable d’envoyer un tableau d’objets !  
+- Il est préférable d'envoyer un tableau d'objets !  
 :warning: Ne pas oubliez d'importer <code>Ngfor</code>
 **Depuis le componsant mère ou root**
 <img src="../img/td/td9/6-app.png" width="200">
