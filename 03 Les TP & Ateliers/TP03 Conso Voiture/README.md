@@ -4,7 +4,8 @@
 
 A partir du fichier <code>tp-alpha-voiture-conso-maquette-1.html</code>
 ## Partie 1
-![alt text](../../img/tp/tp-apha-1.webp) 
+<img src="../../img/tp/tp-apha-1.webp" width="200">
+
 - créer un formulaire en javascript
 - Afficher le résultat
  
@@ -16,7 +17,8 @@ ma consommation est de 5 litres/100km
 
 ## Partie 2
 A partir du fichier <code>tp-alpha-voiture-conso-maquette-2.html</code>
-![alt text](../../img/tp/tp-apha-2.webp) 
+  
+<img src="../../img/tp/tp-apha-2.webpp" width="200"> 
   
 - enlever le bouton !
 
