@@ -6,7 +6,54 @@
 
 <img src="../../img/tp/tpe.webp" width="600">
 
+- Créer un seul component : Equipe
+**Le component equipe :**
+```html
+<table class="table table-striped mt-4">
+  <tbody>
+    <tr>
+      <td colspan="3">
+        <div class="row">
+          <div class="col-1">
+            <button class="btn btn-danger">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+          <div class="col-6">
+            <h3>Team A</h3>
+          </div>
+          <div class="col-5"></div>
+        </div>
+      </td>
+    </tr>
 
+    <tr>
+      <th>Prénom</th>
+      <th>Nom</th>
+      <th>Action</th>
+    </tr>
+
+    <tr>
+      <td>Jean</td>
+      <td>DUJARDIN</td>
+      <td>
+        <button class="btn btn-danger">
+          <i class="fa fa-trash"></i>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>Brad</td>
+      <td>PITT</td>
+      <td>
+        <button class="btn btn-danger">
+          <i class="fa fa-trash"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
 - Création d'objet Equipe
 - Création d'objet Personne
 - Création d'un objet Entreprise
