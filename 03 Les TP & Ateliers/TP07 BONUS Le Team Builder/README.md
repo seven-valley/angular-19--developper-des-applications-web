@@ -10,6 +10,8 @@
   
     
 - Créer un seul component : Equipe
+  
+  
 **Le component equipe :**
 ```html
 <table class="table table-striped mt-4">
