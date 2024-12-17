@@ -6,6 +6,8 @@
 <img src="../../img/tp/tp7.webp" width="600">
 </a>
 
+:warning: **Pas de création de composants**  
+
 - Créer 2 tableaux d'objets séries
 ```js
 series:any[] =[];
