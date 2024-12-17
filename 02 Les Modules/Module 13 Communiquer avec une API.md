@@ -1,6 +1,6 @@
 # Module 13 - Communiquer avec une  API
 
-## Créer un API de type backend = NO Backend
+## Créer une API de type backend = NO Backend
 Sur FireBase
 Nous allons activer le service Real **Time Data Base**
 <a href="">firebase</a>
