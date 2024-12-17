@@ -42,15 +42,21 @@ npm i -g @angular/cli
 ```
 ng new premier-prj --style=scss --skip-tests=true
 ```
-- Nous choissons **sass**
-Comme celà le jour où nous passons à scss : tout est prêt
-Et nous pouvons en attendant continuer à utiliser le **CSS** classique
-- Nous choisissons **SSG** pour un mode applicatif  
+- Nous choissons **sass**  : <code>--style=scss</code>
+Comme celà le jour où nous passons à scss : tout est prêt  
+Et nous pouvons en attendant continuer à utiliser le **CSS** classique  
+
+- Nous enlevons les **fichier de tests**   : <code>--skip-tests=true</code>
+
+**? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? (y/N)**
+Répondre **N**  
+- Nous choisissons **SSG** pour un mode applicatif 
 **SSG** **S**tatic **S**ite **G**eneration :Pas de SEO  
 **SSR** Server Side Rendering : NO
 C'est à dire ready for **SEO** les google bots peuvent parser notre site !
 
-- Nous choisissons **y** pour pour le google anlytics  
+- Nous choisissons **y** pour pour le google analytics
+Afin de ne pas envoyer des données aux **US** et respecter le RGPD   
 
 Nous avons désormais un nouveau répertoire pour notre projet
 ```
@@ -75,7 +81,13 @@ npm i bootstrap
 ```
 npm i --save @fortawesome/fontawesome-free
 ```
-## :five: Modifier le fichier : angular.json
+
+## :five: Ouvrir VS code sur ce projet
+```
+code .
+```
+
+## :six: Modifier le fichier : angular.json
 Pour ajouter **Bootstrap 5** et **FontAwesome**  
 **Ajouter ces 2 lignes :**
 ```
@@ -101,7 +113,7 @@ Pour ajouter **Bootstrap 5** et **FontAwesome**
             ],
 
 ```
-## :six: Je lance le locahost
+## :seven: Je lance le locahost
 
 http://localhost:4200
   
@@ -109,7 +121,7 @@ Je lance le locahost
 ```
 ng serve -o
 ```
-## :seven: mon premier "Hello World"
+## :eight: mon premier "Hello World"
 
 **app.component.html**
 ```html

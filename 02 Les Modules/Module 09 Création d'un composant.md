@@ -54,7 +54,6 @@ import { GuestComponent } from './guest/guest.component';
   selector: 'app-root',
   // on ajoute le composant dans les imports
   imports: [GuestComponent],
-  standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

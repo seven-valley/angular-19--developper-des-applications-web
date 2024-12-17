@@ -1,12 +1,17 @@
 # TP 07 Team Builder  
 <img src="../../img/3-piments.png" width="200">
 
-**live preview** :  
+**live preview** :    
 [Tester le TP 07](https://www.sevenvalley.fr/tp-javascript/tpe) 
-
+  
+<a href="https://www.sevenvalley.fr/tp-javascript/tpe">
 <img src="../../img/tp/tpe.webp" width="600">
-
+</a>
+  
+    
 - Créer un seul component : Equipe
+  
+  
 **Le component equipe :**
 ```html
 <table class="table table-striped mt-4">
@@ -96,16 +101,16 @@ utiliser <code>.filter</code> et <code>.find</code>
     const personnes =[
         {id:1,nom:'BRAD',prenom:'PITT'},
         {id:2,nom:'TOM',prenom:'CRUISE'},
-        {id:3,nom:'Angelina',prenom:'Jolie'},
-        {id:4,nom:'Tom',prenom:'CRUISE'}
+        {id:3,nom:'Angelina',prenom:'JOLIE'},
+        {id:4,nom:'Bruce',prenom:'WILLIS'}
     ];
     const clients =[
         {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16}
+        {id:3,nom:'Angelina',prenom:'JOLIE',age:16}
     ];
 // const nouveauClients =[
-//         {id:2,nom:'TOM',prenom:'CRUISE'},
-//         {id:4,nom:'Tom',prenom:'CRUISE'}
+//        {id:2,nom:'TOM',prenom:'CRUISE'},
+//        {id:4,nom:'Bruce',prenom:'WILLIS'}
 //     ];
 ```
 **Excercice 2**  
@@ -115,16 +120,16 @@ utiliser <code>.filter</code> et <code>.find</code>
     const personnes =[
         {id:1,nom:'BRAD',prenom:'PITT'},
         {id:2,nom:'TOM',prenom:'CRUISE'},
-        {id:3,nom:'Angelina',prenom:'Jolie'},
-        {id:4,nom:'Tom',prenom:'CRUISE'}
+        {id:3,nom:'Angelina',prenom:'JOLIE'},
+        {id:4,nom:'Bruce',prenom:'WILLIS'}
     ];
     const clients =[
         {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16}
+        {id:3,nom:'Angelina',prenom:'JOLIE',age:16}
     ];
 // const dejaClients =[
 //     {id:1,nom:'BRAD',prenom:'PITT'},
-//     {id:3,nom:'Angelina',prenom:'Jolie'},
+//     {id:3,nom:'Angelina',prenom:'JOLIE'},
 //     ];
 ```
 
@@ -135,7 +140,7 @@ utiliser <code>.fitler</code>
         const personnes =[
         {id:1,nom:'BRAD',prenom:'PITT',age:18},
         {id:2,nom:'TOM',prenom:'CRUISE',age:15},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16},
+        {id:3,nom:'Angelina',prenom:'JOLIE',age:16},
         {id:4,nom:'TOM',prenom:'CRUISE',age:61}
     ];
    
@@ -160,3 +165,5 @@ const items = [
 let totalPrice = 0;
 
 ```
+
+
