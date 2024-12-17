@@ -58,7 +58,9 @@ export class PersonneService {
 ```
 
 # :two: Création de la méthode <code>emitSubject()</code>  
-Le <code>emitSubject()</code> 
+Le <code>emitSubject()</code> permet d'emmetre la donnée  
+C'est à dire envoyer la donnée en temps réel à chaque composant qui pnt souscrit un abonnement  
+
 **services/personne.service.ts**
 ```ts
 import { Injectable } from '@angular/core';
@@ -77,7 +79,7 @@ export class PersonneService {
 }
 ```
 **services/personne.service.ts**
-# Mettre en place emitSubjeuct dans les méthode du service
+Nous allons garder nos méthodes déjà créée 
 ```ts
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
@@ -101,9 +103,9 @@ export class PersonneService {
 }
 ```
 
-# Récupérer le service dans le component
-Mise en place de l'abonnement dans le component principale
-
+## :three: Récupérer le service dans le component
+Mise en place de l'abonnement dans le component principale  
+avec la méthode <code>subscribe()</code>
 **app.component.ts**
 ```ts
 //...
@@ -116,9 +118,7 @@ ngOnInit(): void {
  }
 ```
 
-
-
-# Mettre les reqête Ajax Asynchrone
+## :four: Mettre les reqête Ajax Asynchrone
 **services/personne.service.ts**
 ```ts
 //...
@@ -154,8 +154,9 @@ export class PersonneService {
 }
 ```
 
-On ajoute la fonction <code>LoadFire()</code>
-
+## :five: On ajoute la fonction <code>LoadFire()</code>
+Avec la fonction <code>emitSubject();</code>  
+Elle enverra les données, une fois que firebase les aura envoyées
 ```ts
 //...
 export class PersonneService {
@@ -175,7 +176,7 @@ export class PersonneService {
 }
 ```
 
-
+## :five: On ajoute appelle <code>LoadFire()</code> dans le composant
 **app.component.ts**
 ```ts
  ngOnInit(): void {
