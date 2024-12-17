@@ -8,7 +8,7 @@
 <img src="../../img/tp/tpe.webp" width="600">
 </a>
   
-  
+    
 - Créer un seul component : Equipe
 **Le component equipe :**
 ```html
