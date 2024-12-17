@@ -14,9 +14,12 @@ export class AppComponent {
   km = '';
   conso = '';
   calcul() {
+    if (this.litre.length>0 && this.km.length>0) {
+      
+    
     const consoVal = (parseFloat(this.litre) * 100) / parseFloat(this.km)
     this.conso = consoVal.toFixed(1);
-    console.log(this.conso);
+    }
   }
   getClass() {
     if (parseFloat(this.conso) < 7) {

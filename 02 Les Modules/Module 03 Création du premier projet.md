@@ -55,6 +55,8 @@ Répondre **N**
 **SSR** Server Side Rendering : NO
 C'est à dire ready for **SEO** les google bots peuvent parser notre site !
 
+On peut le rajouter après ***ng add @angular/ssr***
+
 - Nous choisissons **y** pour pour le google analytics
 Afin de ne pas envoyer des données aux **US** et respecter le RGPD   
 

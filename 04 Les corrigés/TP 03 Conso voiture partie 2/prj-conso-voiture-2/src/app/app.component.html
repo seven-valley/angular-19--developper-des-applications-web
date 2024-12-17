@@ -10,9 +10,9 @@
     <div class="col-4 pt-4">
       <h1 class="h3">Calculer votre consomation</h1>
    
-      <input (onChange)="calcul()" aria-label="litre" [(ngModel)]="litre" class="form-control" placeholder="Litres d'essence" />
+      <input (keyup)="calcul()" aria-label="litre" [(ngModel)]="litre" class="form-control" placeholder="Litres d'essence" />
 
-      <input (onChange)="calcul()" aria-label="km" [(ngModel)]="km" class="form-control my-3" placeholder="Kilomètres" />
+      <input (keyup)="calcul()" aria-label="km" [(ngModel)]="km" class="form-control my-3" placeholder="Kilomètres" />
     
    
 
