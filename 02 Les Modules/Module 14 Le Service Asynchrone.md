@@ -40,37 +40,202 @@ export class PersonneService {
     //...
 }
 ```
-
+## :one: Création du subject
 Nous allons créer un **subject**
 **services/personne.service.ts**
 ```ts
-//...
+import { Injectable } from '@angular/core';
 // 1 importer
 import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AppareilServiceService {
+export class PersonneService {
   // 2 création du subject
   personneSubject = new Subject();
 }
 ```
 
-Création de la méthode <code>emitPersonneSubject()</code>  
-
+# :two: Création de la méthode <code>emitSubject()</code>  
+Le <code>emitSubject()</code> 
 **services/personne.service.ts**
 ```ts
-//...
-// 1 importer
+import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
+import { Personne } from '../models/personne';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AppareilServiceService {
-  // 2 création du subject
+export class PersonneService {
+  personnes:Personne[]=[];
   personneSubject = new Subject();
-  
+  emitSubject(){
+    this.personneSubject.next(this.personnes);
+  }  
 }
+```
+**services/personne.service.ts**
+# Mettre en place emitSubjeuct dans les méthode du service
+```ts
+import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
+import { Personne } from '../models/personne';
+
+@Injectable({
+    providedIn: 'root'
+})
+export class PersonneService {
+    personnes: Personne[] = [];
+    personneSubject = new Subject();
+    emitSubject() {
+        this.personneSubject.next(this.personnes);
+    }
+    ajouter(p: Personne): void {
+        this.personnes.push(p);
+    }
+    enlever(i: number): void {
+        this.personnes.splice(i, 1);
+    }
+}
+```
+
+# Récupérer le service dans le component
+Mise en place de l'abonnement dans le component principale
+
+**app.component.ts**
+```ts
+//...
+ngOnInit(): void {
+    this.personneService.personneSubject.subscribe(
+      (personnes:any)=>{
+        this.personnes = personnes
+      }
+    )
+ }
+```
+
+
+
+# Mettre les reqête Ajax Asynchrone
+**services/personne.service.ts**
+```ts
+//...
+export class PersonneService {
+    //...
+    ajouter(p: Personne): void {
+        this.personnes.push(p);
+        this.saveFire();
+    }
+    enlever(i: number): void {
+        this.saveFire(); // on ajoute
+    }
+    loadFire(){
+        this.httpClient.get<any[]>(this.url)
+        .subscribe(
+            (response)=>{
+                if (response !=undefined){
+                    this.personnes = response;
+                }
+                this.emitSubject();
+            }
+        );
+    }
+    saveFire(){
+        this.httpClient.put(this.url,this.personnes)
+        .subscribe(
+            (response)=>{
+               console.log(response)
+               this.emitSubject();
+            }
+        );
+    }
+}
+```
+
+On ajoute la fonction <code>LoadFire()</code>
+
+```ts
+//...
+export class PersonneService {
+    //...
+    loadFire(){
+        this.httpClient.get<any[]>(this.url)
+        .subscribe(
+            (response)=>{
+                if (response !=undefined){
+                    this.personnes = response;
+                }
+                this.emitSubject();
+            }
+        );
+    }
+    //...
+}
+```
+
+
+**app.component.ts**
+```ts
+ ngOnInit(): void {
+    this.personneService.personneSubject.subscribe(
+      (personnes:any)=>{
+        this.personnes = personnes
+      }
+    );
+    //------------------------------------
+    this.personneService.loadFire()  // on ajoute le chargement
+    //------------------------------------
+ }
+```
+
+# le service complet
+**services/personne.service.ts**
+```ts
+import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
+import { Personne } from '../models/personne';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+    providedIn: 'root'
+})
+export class PersonneService {
+    personnes: Personne[] = [];
+    url='https://alpha-javascript-default-rtdb.europe-west1.firebasedatabase.app/personnes.json';
+    personneSubject = new Subject();
+    constructor(private httpClient:HttpClient){}
+    emitSubject() {
+        this.personneSubject.next(this.personnes);
+    }
+    ajouter(p: Personne): void {
+        this.personnes.push(p);
+        this.saveFire();
+    }
+    enlever(i: number): void {
+        this.saveFire();
+    }
+    loadFire(){
+        this.httpClient.get<any[]>(this.url)
+        .subscribe(
+            (response)=>{
+                if (response !=undefined){
+                    this.personnes = response;
+                }
+                this.emitSubject();
+            }
+        );
+    }
+    saveFire(){
+        this.httpClient.put(this.url,this.personnes)
+        .subscribe(
+            (response)=>{
+               console.log(response)
+               this.emitSubject();
+            }
+        );
+    }
+}
+
 ```
