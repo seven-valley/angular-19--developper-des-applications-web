@@ -1,5 +1,10 @@
-# TP 07 Mes Séries préférées
+# TP 08 Mes Séries préférées
+**live preview** :  
+[Tester le TP 07](https://www.sevenvalley.fr/tp-javascript/tp7/index.html) 
+  
+<a href="https://www.sevenvalley.fr/tp-javascript/tp7/index.html">
 <img src="../../img/tp/tp7.webp" width="600">
+</a>
 
 - Créer 2 tableaux d'objets séries
 ```js
