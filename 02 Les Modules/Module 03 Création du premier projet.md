@@ -75,7 +75,13 @@ npm i bootstrap
 ```
 npm i --save @fortawesome/fontawesome-free
 ```
-## :five: Modifier le fichier : angular.json
+
+## :five: Ouvrir VS code sur ce projet
+```
+code .
+```
+
+## :six: Modifier le fichier : angular.json
 Pour ajouter **Bootstrap 5** et **FontAwesome**  
 **Ajouter ces 2 lignes :**
 ```
@@ -101,7 +107,7 @@ Pour ajouter **Bootstrap 5** et **FontAwesome**
             ],
 
 ```
-## :six: Je lance le locahost
+## :seven: Je lance le locahost
 
 http://localhost:4200
   
@@ -109,7 +115,7 @@ Je lance le locahost
 ```
 ng serve -o
 ```
-## :seven: mon premier "Hello World"
+## :eight: mon premier "Hello World"
 
 **app.component.html**
 ```html
