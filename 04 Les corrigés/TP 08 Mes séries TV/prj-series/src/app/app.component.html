@@ -59,8 +59,8 @@
             <tr>
               <th>Séries</th>
               <th>Année</th>
+              <th>Rating</th>
               <th>Image</th>
-              <th>rating</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -68,7 +68,7 @@
             <tr *ngFor="let series of favs; index as i">
               <td>{{ series.Title }}</td>
               <td>{{ series.Year }}</td>
-              <td>{{ series.Rating }}</td>
+              <td>{{ series.imdbRating }}</td>
               <td>
                 <img src="{{ series.Poster }}" alt="{{ series.Title }}" width="80" />
               </td>
