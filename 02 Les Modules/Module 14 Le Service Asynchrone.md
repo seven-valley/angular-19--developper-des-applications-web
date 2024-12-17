@@ -73,35 +73,21 @@ import { Personne } from '../models/personne';
 export class PersonneService {
   personnes:Personne[]=[];
   personneSubject = new Subject();
+  //--------------------------------
   emitSubject(){
     this.personneSubject.next(this.personnes);
-  }  
+  } 
+  //--------------------------------
+  // Nous allons garder les méthodes déjà créée
+  ajouter(p: Personne): void {
+      this.personnes.push(p);
+  }
+  enlever(i: number): void {
+      this.personnes.splice(i, 1);
+  } 
 }
 ```
-**services/personne.service.ts**
-Nous allons garder nos méthodes déjà créée 
-```ts
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
-import { Personne } from '../models/personne';
 
-@Injectable({
-    providedIn: 'root'
-})
-export class PersonneService {
-    personnes: Personne[] = [];
-    personneSubject = new Subject();
-    emitSubject() {
-        this.personneSubject.next(this.personnes);
-    }
-    ajouter(p: Personne): void {
-        this.personnes.push(p);
-    }
-    enlever(i: number): void {
-        this.personnes.splice(i, 1);
-    }
-}
-```
 
 ## :three: Récupérer le service dans le component
 Mise en place de l'abonnement dans le component principale  
@@ -118,30 +104,13 @@ ngOnInit(): void {
  }
 ```
 
-## :four: Mettre les reqête Ajax Asynchrone
+## :four: Mettre les requête Ajax Asynchrone
 **services/personne.service.ts**
 ```ts
 //...
 export class PersonneService {
     //...
-    ajouter(p: Personne): void {
-        this.personnes.push(p);
-        this.saveFire();
-    }
-    enlever(i: number): void {
-        this.saveFire(); // on ajoute
-    }
-    loadFire(){
-        this.httpClient.get<any[]>(this.url)
-        .subscribe(
-            (response)=>{
-                if (response !=undefined){
-                    this.personnes = response;
-                }
-                this.emitSubject();
-            }
-        );
-    }
+
     saveFire(){
         this.httpClient.put(this.url,this.personnes)
         .subscribe(
@@ -176,7 +145,7 @@ export class PersonneService {
 }
 ```
 
-## :five: On ajoute appelle <code>LoadFire()</code> dans le composant
+## :six: On ajoute appelle <code>LoadFire()</code> dans le composant
 **app.component.ts**
 ```ts
  ngOnInit(): void {
@@ -238,5 +207,4 @@ export class PersonneService {
         );
     }
 }
-
 ```
