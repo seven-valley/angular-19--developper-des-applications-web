@@ -33,20 +33,6 @@ export class AppComponent {
 }
 
 ```
-### Exemple :
-**app.component.ts**
-```ts
-export class AppComponent {
-  etat: string = 'ok';
-  onchanger() {
-    if (this.etat == 'ok') {
-      this.etat = 'NOT OK';
-    } else {
-      this.etat = 'ok';
-    }
-  }
-}
-```
 
 **app.component.html**
 ```html
