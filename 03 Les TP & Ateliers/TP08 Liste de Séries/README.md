@@ -1,6 +1,6 @@
 # TP 08 Mes Séries préférées
 **live preview** :  
-[Tester le TP 07](https://www.sevenvalley.fr/tp-javascript/tp7/index.html) 
+[Tester le TP 08](https://www.sevenvalley.fr/tp-javascript/tp7/index.html) 
   
 <a href="https://www.sevenvalley.fr/tp-javascript/tp7/index.html">
 <img src="../../img/tp/tp7.webp" width="600">
