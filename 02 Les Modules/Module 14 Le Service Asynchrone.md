@@ -57,7 +57,7 @@ export class PersonneService {
 }
 ```
 
-# :two: Création de la méthode <code>emitSubject()</code>  
+## :two: Création de la méthode <code>emitSubject()</code>  
 Le <code>emitSubject()</code> permet d'emmetre la donnée  
 C'est à dire envoyer la donnée en temps réel à chaque composant qui pnt souscrit un abonnement  
 
