@@ -29,3 +29,48 @@ un **Observable** est un objet qui **émet** des informations auxquelles on souh
 - Le composant va prendre un abonnement <code>subscription</code>
 par example ***comparaison avec un abonnement à Sciences & vie***
 
+**services/personne.service.ts**
+```ts
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class PersonneService {
+    //...
+}
+```
+
+Nous allons créer un **subject**
+**services/personne.service.ts**
+```ts
+//...
+// 1 importer
+import { Subject } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AppareilServiceService {
+  // 2 création du subject
+  personneSubject = new Subject();
+}
+```
+
+Création de la méthode <code>emitPersonneSubject()</code>  
+
+**services/personne.service.ts**
+```ts
+//...
+// 1 importer
+import { Subject } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AppareilServiceService {
+  // 2 création du subject
+  personneSubject = new Subject();
+  
+}
+```
