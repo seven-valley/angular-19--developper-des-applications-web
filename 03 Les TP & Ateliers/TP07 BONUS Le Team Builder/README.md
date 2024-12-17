@@ -1,8 +1,9 @@
 # TP 07 Team Builder  
 <img src="../../img/3-piments.png" width="200">
 
-**live preview** :  
+**live preview** :    
 [Tester le TP 07](https://www.sevenvalley.fr/tp-javascript/tpe) 
+  
 <a href="https://www.sevenvalley.fr/tp-javascript/tpe">
 <img src="../../img/tp/tpe.webp" width="600">
 </a>
