@@ -1,5 +1,6 @@
 # Module 12 LocalStorage et SessionStorage
 <img src="../img/db.webp" width="100">
+  
 - Local Storage ne stocke que des chaînes de caractères
 - La taille est de **20 Mo** (1 octet = caractères) 20millions de caractères
 - Si je redémarre l’ordinateur les données sont toujours là.  
