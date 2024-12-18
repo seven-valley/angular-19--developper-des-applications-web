@@ -1,6 +1,6 @@
 # Module 02 JavaScript Next Génération
 
-Ou **_le nouveau JavaScript_**
+Ou **_le nouveau JavaScript_**  
 En fonction du dernier **ECMA**  
 
 Le 16 décembre 2024 : **ECMA-262**  
