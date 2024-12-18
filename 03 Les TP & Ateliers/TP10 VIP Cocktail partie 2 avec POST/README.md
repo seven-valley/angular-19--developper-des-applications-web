@@ -10,16 +10,19 @@
 - <code>DELETE</code> Effacer une personne avec la méthode DELETE   
   
   Nom du noeud :<code>personne.json</code>  
-url pour patch : <code>url/personne/id/.json</code>  
+url pour patch : <code>url/personne/id/.json</code>
+
 url pour delete : <code>url/personne/id/.json</code>  
-  
+ <code>https://alpha-javascript-default-rtdb.europe-west1.firebasedatabase.app/client/-OB5oS7whXKqTlbBCZFx/.json</code>
+
 ## Problème on récupère les personnes comme ceci
+
 ```js
-let data= {
-    "-OB5oS7whXKqTlbBCZFx" :{nom: "PITT", "prenom": "Brad"},
-    "-OB5oSII9wHESMfLsEKC" :{nom: "CAGE", "prenom": "Nicolas"},
-    "-OB5oSPEiZ3ut529fo0a" :{nom: "JOLIE", "prenom": "Angelina"}
-}
+let data = {
+  "-OB5oS7whXKqTlbBCZFx": { nom: "PITT", prenom: "Brad" },
+  "-OB5oSII9wHESMfLsEKC": { nom: "CAGE", prenom: "Nicolas" },
+  "-OB5oSPEiZ3ut529fo0a": { nom: "JOLIE", prenom: "Angelina" },
+};
 ```
 
 ## C'est à dire comme cela
