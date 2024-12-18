@@ -26,7 +26,7 @@ un **Observable** est un objet qui **émet** des informations auxquelles on souh
 - Grace à un objet de type <code>Subscription</code>
 
 **Le service va emmètre un subject**
-- Le composant va prendre un abonnement <code>subscription</code>
+- Le composant va prendre un abonnement <code>subscription</code>  
 par example ***comparaison avec un abonnement à Sciences & vie***
 
 **services/personne.service.ts**
