@@ -1,6 +1,6 @@
-# TP 06 Vip Cocktail
+# TP 09 Vip Cocktail
 https://www.sevenvalley.fr/tp-javascript/tp6/index.html
-![alt text](../../img/tp6.webp)  
+![alt text](../../img/tp/tp6.webp)  
 
 ```js
 const personne ={
