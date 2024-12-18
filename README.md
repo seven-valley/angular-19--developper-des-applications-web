@@ -52,7 +52,7 @@ j'active trigger on tab
 
 # structure HTML
 
-!+ <kbd>tab</kbd>
+<kbd>!</kbd> + <kbd>tab</kbd>
 
 .container
 
