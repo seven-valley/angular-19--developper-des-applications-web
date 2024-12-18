@@ -1,7 +1,8 @@
 # Module 02 JavaScript Next Génération
 
 Ou **_le nouveau JavaScript_**
-En fonction du dernier ECMA
+En fonction du dernier **ECMA**  
+
 Le 16 décembre 2024 : **ECMA-262**  
 **15th edition, June 2024**  
 https://ecma-international.org/publications-and-standards/standards/ecma-262/
