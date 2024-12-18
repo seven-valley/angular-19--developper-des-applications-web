@@ -4,7 +4,8 @@ https://marketplace.visualstudio.com/items?itemName=Angular.ng-template
 
 # Prettier
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-Setting > text Editor > Format on save
+  
+Setting > text Editor > Format on save  
 <img src="./img/prettier.png" width="200">
 
 # Les raccourcis VS CODE
