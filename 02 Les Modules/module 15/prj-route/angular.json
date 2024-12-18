@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "prj-post": {
+    "premier-prj": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -39,7 +39,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/prj-post",
+            "outputPath": "dist/premier-prj",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -54,9 +54,16 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+               "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -86,10 +93,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "prj-post:build:production"
+              "buildTarget": "premier-prj:build:production"
             },
             "development": {
-              "buildTarget": "prj-post:build:development"
+              "buildTarget": "premier-prj:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -122,6 +129,6 @@
     }
   },
   "cli": {
-    "analytics": "e402dd49-d953-4b2e-9708-ccfb9d73e80a"
+    "analytics": "9a3d52c2-8c7d-497c-a40a-eaf0aec763ae"
   }
 }
