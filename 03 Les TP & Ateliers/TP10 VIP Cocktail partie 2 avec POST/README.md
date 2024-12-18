@@ -9,9 +9,9 @@
 - <code>PATCH</code> Modifier une personne avec la méthode POST  
 - <code>DELETE</code> Effacer une personne avec la méthode DELETE   
   
-  Nom du noeud :<code>personne.json</code>
-url pour patch : <code>url/personne/id/.json</code>
-url pour delete : <code>url/personne/id/.json</code>
+  Nom du noeud :<code>personne.json</code>  
+url pour patch : <code>url/personne/id/.json</code>  
+url pour delete : <code>url/personne/id/.json</code>  
   
 ## Problème on récupère les personnes comme ceci
 ```js
