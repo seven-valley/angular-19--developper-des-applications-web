@@ -6,7 +6,7 @@
   
 :warning: Ne plus utiliser <code>PUT</code>  
 - <code>POST</code> Ajouter une personne avec la méthode POST  
-- <code>PATCH</code> Modifier une personne avec la méthode POST  
+- <code>PATCH</code> Modifier une personne avec la méthode PATCH  
 - <code>DELETE</code> Effacer une personne avec la méthode DELETE   
   
   Nom du noeud :<code>personne.json</code>  
