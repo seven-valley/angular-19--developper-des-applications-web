@@ -1,8 +1,8 @@
-# liens du plugin VS CODE
-Angular Language Service  
+# liens des plugins VS CODE
+## Angular Language Service  
 https://marketplace.visualstudio.com/items?itemName=Angular.ng-template  
 
-# Prettier
+## Prettier
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
   
 Setting > text Editor > Format on save  
