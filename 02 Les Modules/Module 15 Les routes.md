@@ -84,7 +84,7 @@ export class AppComponent {
 
 ## :four: La page Home
 Injecter le router dans le constructeur
- ▪ Dans le constructeur
+
 
  **app.component.ts**
 ```ts
