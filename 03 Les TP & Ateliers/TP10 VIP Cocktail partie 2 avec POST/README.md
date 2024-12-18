@@ -10,11 +10,10 @@
 - <code>DELETE</code> Effacer une personne avec la méthode DELETE   
   
   Nom du noeud :<code>personne.json</code>  
-url pour patch : <code>url/personne/id/.json</code>
-
-url pour delete : <code>url/personne/id/.json</code>
-
-
+- url pour patch : <code>url/personne/id/.json</code>
+- url pour delete : <code>url/personne/id/.json</code>
+  
+  
  <code>'https://alpha-javascript-default-rtdb.europe-west1.firebasedatabase.app/client/-OB5oS7whXKqTlbBCZFx/.json'</code>
 
 ## Problème on récupère les personnes comme ceci
