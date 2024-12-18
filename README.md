@@ -38,7 +38,7 @@ Je met surbrillance puis x le nombre d'occurance
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>f</kbd>
 
-# mettre en commentaire plusieurs lignes
+## mettre en commentaire plusieurs lignes
 
 <kbd>Ctrl</kbd> + <kbd>/</kbd>
 
