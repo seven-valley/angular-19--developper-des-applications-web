@@ -119,10 +119,10 @@ https://themeforest.net/category/site-templates/admin-templates
 
 Maquettes bootstrap  
 https://startbootstrap.com/templates/landing-pages  
-https://startbootstrap.com/template/small-business  
-  
+https://startbootstrap.com/template/small-business
+
 changer le themes de bootstrap  
 https://bootswatch.com/
 
-le openclassrooms de Envato
+le openclassrooms de Envato  
 https://tutsplus.com/
