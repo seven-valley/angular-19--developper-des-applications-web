@@ -1,7 +1,7 @@
 # Module 02 JavaScript Next Génération
 
 Ou **_le nouveau JavaScript_**  
-En fonction du dernier **ECMA**  
+En fonction du dernier **ECMA**
 
 Le 16 décembre 2024 : **ECMA-262**  
 **15th edition, June 2024**  
@@ -17,7 +17,7 @@ if (age > 18) {
 console.log(info); // undefined
 ```
 
-## prise en main du const
+## Prise en main du const
 
 le const c'est aussi un **tableau** ou un **objet**
 
@@ -28,7 +28,7 @@ p2.nom = "CRUISE";
 console.log(p1);
 ```
 
-## pour copier ou clonner un objet
+## Pour copier ou clonner un objet
 
 :warning: Ceci ne marche pas !
 
@@ -72,7 +72,9 @@ console.log(p1.prenom + " " + p1.nom);
 console.log(`${p1.prenom} ${p1.nom} ${p1.age > 17 && "good"}`);
 ```
 
-## Bonjour et vive le ternaire
+## Bonjour le ternaire !
+
+Et vive le ternaire !
 
 ```js
 // if classique
