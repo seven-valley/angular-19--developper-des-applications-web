@@ -6,7 +6,7 @@
 - Module 03 - Création du nouveau Projet
 - Module 04 - Ma première Application
 
-- $\color{green}{\text{TP 01}}$ - Calcul de l'IMC
+- $\color{green}{\text{TP 01}}$ Calcul de l'IMC
 
 # Jour 1 - Après midi
 
