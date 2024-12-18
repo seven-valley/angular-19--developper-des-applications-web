@@ -1,10 +1,13 @@
 # TP 10 - VIP cocktail
+[Tester le TP 10](https://www.sevenvalley.fr/tp-javascript/tp6/index.html) 
+
 <img src="../../img/tp/tp6.webp" width="200">
-:warning: Ne plus utiliser <code>PUT</code>
-- <code>POST</code> Ajouter une personne avec la méthode POST
-- <code>PATCH</code> Modifier une personne avec la méthode POST
-
-
+  
+:warning: Ne plus utiliser <code>PUT</code>  
+- <code>POST</code> Ajouter une personne avec la méthode POST  
+- <code>PATCH</code> Modifier une personne avec la méthode POST  
+  
+  
 ## Problème on récupère les personnes comme ceci
 ```js
 let data= {

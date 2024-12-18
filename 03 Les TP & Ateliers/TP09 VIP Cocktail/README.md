@@ -1,5 +1,6 @@
 # TP 09 Vip Cocktail
-https://www.sevenvalley.fr/tp-javascript/tp6/index.html
+[Tester le TP 09](https://www.sevenvalley.fr/tp-javascript/tp6/index.html) 
+
 <img src="../../img/tp/tp6.webp" width="500">
 
 
