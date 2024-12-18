@@ -1,12 +1,17 @@
 # TP 10 - VIP cocktail
-[Tester le TP 10](https://www.sevenvalley.fr/tp-javascript/tp6/index.html) 
+
+[Tester le TP 10](https://www.sevenvalley.fr/tp-javascript/tp6/index.html)
 
 <img src="../../img/tp/tp6.webp" width="200">
   
 :warning: Ne plus utiliser <code>PUT</code>  
 - <code>POST</code> Ajouter une personne avec la méthode POST  
 - <code>PATCH</code> Modifier une personne avec la méthode POST  
+- <code>DELETE</code> Effacer une personne avec la méthode DELETE   
   
+  Nom du noeud :<code>personne.json</code>
+url pour patch : <code>url/personne/id/.json</code>
+url pour delete : <code>url/personne/id/.json</code>
   
 ## Problème on récupère les personnes comme ceci
 ```js
@@ -18,15 +23,17 @@ let data= {
 ```
 
 ## C'est à dire comme cela
+
 ```js
-let data= {
-    "id1" :{nom: "PITT", "prenom": "Brad"},
-    "id2" :{nom: "CAGE", "prenom": "Nicolas"},
-    "id3" :{nom: "JOLIE", "prenom": "Angelina"}
-}
+let data = {
+  id1: { nom: "PITT", prenom: "Brad" },
+  id2: { nom: "CAGE", prenom: "Nicolas" },
+  id3: { nom: "JOLIE", prenom: "Angelina" },
+};
 ```
 
 ## Et on souhaiterais avoir cela
+
 ```js
 let personnes = [
     {nom: "PITT", "prenom": "Brad", "id1"},
@@ -36,15 +43,16 @@ let personnes = [
 ```
 
 ## penser à for + in
+
 ```js
-for (let attribut in data){
-    console.log(attribut);
-    console.log(data[attribut]);
-    
+for (let attribut in data) {
+  console.log(attribut);
+  console.log(data[attribut]);
 }
 ```
 
 ## Ou bien Object.keys
+
 ```js
  Object.keys(data).map( attribut => {
     console.log(attribut);
