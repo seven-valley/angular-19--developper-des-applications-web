@@ -32,7 +32,7 @@ let data = {
 };
 ```
 
-## Et on souhaiterais avoir cela
+## Et on souhaiterait avoir cela
 
 ```js
 let personnes = [
