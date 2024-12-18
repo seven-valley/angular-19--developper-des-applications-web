@@ -13,15 +13,11 @@ Setting > text Editor > Format on save
 
 # Les raccourcis VS CODE
 
-## alignement automatique du code
-
-<kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>f</kbd>
-
-## dupliquer une ligne
+## Dupliquer une ligne
 
 <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>fleche</kbd> (fleche haut et bas)
 
-## deplacer la ligne ou un bloque
+## Déplacer la ligne ou un bloque
 
 <kbd>Alt</kbd> + <kbd>fleche</kbd>
 
@@ -30,7 +26,7 @@ Setting > text Editor > Format on save
 Je met surbrillance puis x le nombre d'occurance  
 <kbd>Ctrl</kbd> + <kbd>D</kbd>
 
-## supprimer la ligne
+## Supprimer la ligne
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd>
 
