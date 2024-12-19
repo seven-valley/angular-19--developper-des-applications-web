@@ -1,16 +1,17 @@
  # Module 15 - les routes
  <img src="../img/route.webp" width="400">
 
- https://angular.dev/guide/routing/common-router-tasks
-
+https://angular.dev/guide/routing/common-router-tasks  
+https://angular.fr/routeurs/creer-un-simple-routeur  
+  
 - Mise en place d'un router : définir les routes
 - Mise en place du menu et du "router outlet"
 - Naviguer sur une route
 - Passer un paramètre à une route
-- Récupérer le paramètre
+- Récupérer le paramètre d'une route ex : **id**
 - Naviguer sur une route avec un paramètre
 
-# Créations des pages
+## :one: Créations des pages
 La page **Home**
 ```
 ng g c home
@@ -24,7 +25,7 @@ La page **Contact**
 ng g c contact
 ```
 
-# Mise en place du router
+## :two: Mise en place du router
 Dans <code>app.route.ts</code>
 ```ts
 import { Routes } from '@angular/router';
@@ -40,7 +41,7 @@ export const routes: Routes = [
 ];
 ```
 
-# le component principal devient :
+## :three: Le component principal devient :
 **app.component.ts**
 ```ts
 import { Component } from '@angular/core';
@@ -82,9 +83,9 @@ export class AppComponent {
   }
 ```
 
-# La page Home
+## :four: La page Home
 Injecter le router dans le constructeur
- ▪ Dans le constructeur
+
 
  **app.component.ts**
 ```ts
@@ -99,6 +100,7 @@ export class HomeComponent {
   }
 }
 ```
+
  **app.component.html**
 ```html
 <h1>Home</h1>
@@ -111,7 +113,7 @@ export class HomeComponent {
 <button (click)="onProduit()">GO produit 33</button>
 ```
 
-# produit
+## :five: La page produit
  **produit.component.ts**
 ```ts
 export class ProduitComponent {
