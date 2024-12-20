@@ -97,7 +97,7 @@ Pour ajouter **Bootstrap 5** et **FontAwesome**
                "./node_modules/bootstrap/dist/css/bootstrap.css"
 ```
 **Avant**
-```
+```json  title="angular.json"
  "styles": [
               "src/styles.scss"
             ],
